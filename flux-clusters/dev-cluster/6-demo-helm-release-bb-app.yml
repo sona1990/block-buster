@@ -11,8 +11,9 @@ spec:
       reconcileStrategy: ChartVersion
       sourceRef:
         kind: HelmRepository
-        name: 6-demo-helm-bb-app
-  interval: 1m0s
+        name: 6-demo-source-helm-bb-app
+  interval: 10s
+  targetNamespace: 6-demo
   values:
     labels:
       app:
